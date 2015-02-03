@@ -24,6 +24,21 @@ Testing
 
 > sbt test
 
+Known Issues
+------------
+
+* on MacOS downgrade your JDK version to 1.6 if issues with JAXWS version below
+
+Caused by: java.util.MissingResourceException: \
+Can't find com.sun.xml.internal.messaging.saaj.soap.LocalStrings bundle
+
+in ~/.bash_profile
+> # JAVA_HOME
+> #export JAVA_VERSION=1.8
+> #export JAVA_VERSION=1.7
+> export JAVA_VERSION=1.6
+> export JAVA_HOME=$(/usr/libexec/java_home -v ${JAVA_VERSION})
+
 - Other solution using http://scalaxb.org
 -----------------------------------------
 
