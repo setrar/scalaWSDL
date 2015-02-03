@@ -32,12 +32,12 @@ Known Issues
 Caused by: java.util.MissingResourceException: \
 Can't find com.sun.xml.internal.messaging.saaj.soap.LocalStrings bundle
 
-in ~/.bash_profile
- # JAVA_HOME
- #export JAVA_VERSION=1.8
- #export JAVA_VERSION=1.7
- export JAVA_VERSION=1.6
- export JAVA_HOME=$(/usr/libexec/java_home -v ${JAVA_VERSION})
+in ~/.bash_profile<br>
+ # JAVA_HOME<br>
+ #export JAVA_VERSION=1.8<br>
+ #export JAVA_VERSION=1.7<br>
+ export JAVA_VERSION=1.6<br>
+ export JAVA_HOME=$(/usr/libexec/java_home -v ${JAVA_VERSION})<br>
 
 - Other solution using http://scalaxb.org
 -----------------------------------------
