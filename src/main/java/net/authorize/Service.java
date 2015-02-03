@@ -16,7 +16,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.1
  * 
  */
-@WebServiceClient(name = "Service", targetNamespace = "https://api.authorize.net/soap/v1/", wsdlLocation = "file:/C:/Applications/cygwin64/home/brobert/Developer/scalaWSDL/Authorize.net.wsdl")
+@WebServiceClient(name = "Service", targetNamespace = "https://api.authorize.net/soap/v1/", wsdlLocation = "https://apitest.authorize.net/soap/v1/Service.asmx?WSDL")
 public class Service
     extends javax.xml.ws.Service
 {
@@ -29,9 +29,9 @@ public class Service
         try {
             URL baseUrl;
             baseUrl = net.authorize.Service.class.getResource(".");
-            url = new URL(baseUrl, "file:/C:/Applications/cygwin64/home/brobert/Developer/scalaWSDL/Authorize.net.wsdl");
+            url = new URL(baseUrl, "https://apitest.authorize.net/soap/v1/Service.asmx?WSDL");
         } catch (MalformedURLException e) {
-            logger.warning("Failed to create URL for the wsdl Location: 'file:/C:/Applications/cygwin64/home/brobert/Developer/scalaWSDL/Authorize.net.wsdl', retrying as a local file");
+            logger.warning("Failed to create URL for the wsdl Location: 'https://apitest.authorize.net/soap/v1/Service.asmx?WSDL', retrying as a local file");
             logger.warning(e.getMessage());
         }
         SERVICE_WSDL_LOCATION = url;

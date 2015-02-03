@@ -6,7 +6,7 @@ A simple scala SOAP client
 Stub Generation
 ---------------
 
-> wsimport -keep Authorize.net.wsdl -d src/main//java
+> wsimport -keep https://apitest.authorize.net/soap/v1/Service.asmx?WSDL  -d src/main/java -p net.authorize
 
 Coding
 ------
