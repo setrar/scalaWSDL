@@ -6,7 +6,7 @@ A simple scala SOAP client
 Stub Generation
 ---------------
 
-> wsimport -keep ping.wsdl -d src/main//java
+> wsimport -keep Authorize.net.wsdl -d src/main//java
 
 Coding
 ------
