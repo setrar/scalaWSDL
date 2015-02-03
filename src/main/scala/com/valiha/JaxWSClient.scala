@@ -2,7 +2,6 @@ package com.valiha
 
 import net.authorize.Service
 import javax.xml.ws.WebServiceRef
-import javax.xml.ws.WebServiceClient
 
 class JaxWSClient {
 
