@@ -19,4 +19,7 @@ Generate Eclipse Artifacts
 Running
 -------
 
+WSDL Generator 
+--------------
 
+http://scalaxb.org/
