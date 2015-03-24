@@ -13,6 +13,8 @@ scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 libraryDependencies ++= {
   val dispatchV = "0.11.2" // change this to appropriate dispatch version
   Seq(
+     "javax.activation" % "activation" % "1.1.1",
+     "com.sun.xml.messaging.saaj" % "saaj-impl" % "1.3.1",
      "org.scala-lang.modules"  %% "scala-xml"                % "1.0.2",
      "org.scala-lang.modules"  %% "scala-parser-combinators" % "1.0.1",
      "net.databinder.dispatch" %% "dispatch-core" % dispatchV
