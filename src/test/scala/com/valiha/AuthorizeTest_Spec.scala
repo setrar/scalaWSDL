@@ -22,7 +22,10 @@ class AuthorizeTest_Spec extends FreeSpec {
 
   "Is Authorize.net JAX-WS available? " - {
 
-    val client = new JaxWSClient
+  //val host = "http://localhost:80/soap/v1/Service.asmx?WSDL"
+  val host = "https://apitest.authorize.net/soap/v1/Service.asmx?WSDL"
+
+    val client = new JaxWSClient(new java.net.URL(host))
     assert(client.isAlive.get == "Ok")
 
   }
